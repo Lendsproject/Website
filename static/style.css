@@ -1,0 +1,551 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #3b141c;
+  --secondary-color: #31473A;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+
+  /* Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Stylings for whole site */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:where(section, footer) .section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
+}
+
+section .section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+
+section .section-title::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-s);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #31473A; 
+  z-index: 5;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #EDF4F2;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #FFF;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #EDF4F2;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #7C8363;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("images/matcha.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #31473A;
+}
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #31473A;
+}
+
+.about-section {
+  padding: 120px;
+  background: #fff;
+}
+
+.about-section .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.about-section .about-image-wrapper .about-image {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-section .about-details {
+  max-width: 800px;
+}
+
+.about-section .about-details .section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+/* Add styles for icons in the about section */
+.about-section .social-link-list .social-link i {
+  color: #31473A; /* Set the desired color for the icons */
+  font-size: 1em; /* Adjust the size of the icons if needed */
+  margin: 0 10px; /* Add some margin around the icons */
+}
+
+/* Menu section styling */
+.menu-section {
+  color: var(--white-color);
+  background: #7C8363;
+  padding: 100px 20px 50px; /* Add top padding to create space between header and section */
+  text-align: center; /* Center the title */
+}
+
+.menu-section .section-title {
+  color: var(--secondary-color);
+  font-size: 3em; /* Increase the font size of the title */
+  margin-bottom: 40px; /* Add more space below the title */
+}
+
+.menu-section .menu-list {
+  display: flex;
+  gap: 30px; /* Adjust the gap as needed */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+.menu-section .menu-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(33.333% - 20px); /* Adjust width to fit three items per row */
+}
+
+.menu-section .menu-item .menu-image {
+  width: 83%;
+  aspect-ratio: 1;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.menu-section .menu-item .menu-details {
+  width: 100%;
+}
+
+.menu-section .menu-item .menu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-section .menu-item .menu-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left; /* Align text to the left */
+}
+
+.menu-section .menu-item .name {
+  margin: 12px 0;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+}
+
+.menu-section .menu-item .text {
+  font-size: var(--font-size-m);
+}
+
+.order-form-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  align-items:center;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for inputs */
+  color: black; /* Text color inside input fields */
+}
+textarea{
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #A7C957;
+  color: #386641;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-page {
+    /* Styles specific to order page */
+    background-color: #f5f5f5; /* Example style */
+  }
+
+.gallery-image{
+  width: 100px;
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures images fill the container without distortion */
+
+}
+/* Gallery section styling */
+.gallery-section {
+  padding: 100px 20px 50px; /* Add top padding to create space between header and section */
+  text-align: center; /* Center the title */
+}
+
+.gallery-section .section-title {
+color:  var(--secondary-color);
+font-size: 3em; /* Increase the font size of the title */
+margin-bottom: 40px; /* Add more space below the title */
+}
+
+.gallery-section .gallery-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.gallery-section .gallery-list .gallery-item {
+  overflow: hidden;
+  border-radius: var(--border-radius-s);
+  width: calc(100% / 3 - 32px);
+}
+
+.gallery-section .gallery-item .gallery-image {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  transition: 0.3s ease;
+}
+
+.gallery-section .gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+
+/* Contact section styling */
+.contact-section {
+  padding: 210px;
+  background: #7C8363;
+  text-align: center; /* Center the title */
+}
+
+.contact-section .section-title {
+  color: white;
+  margin-bottom: 30px; /* Add space below the title */
+}
+
+.contact-section .section-content {
+  display: flex;
+  flex-direction: column; /* Stack contact info vertically */
+  align-items: center; /* Center horizontally */
+  max-width: 600px; /* Limit width for better readability on larger screens */
+  margin: 0 auto; /* Center the content block */
+  padding: 30px; /* Add some padding around the content */
+  background-color: rgba(0, 0, 0, 0.2); /* Optional: Add a subtle background to the content area */
+  border-radius: 10px; /* Optional: Round the corners of the content area */
+}
+
+.contact-section .contact-info-list {
+  width: 100%; /* Make the list take full width of the container */
+  list-style: none; /* Remove bullet points from list */
+  padding: 0;
+}
+
+.contact-section .contact-info-list .contact-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 25px 0; /* Increase margin for spacing */
+  gap: 20px; /* Increase gap between icon and text */
+}
+
+.contact-section .contact-info-list .contact-info i {
+  font-size: 2em; /* Increase the font size of the icons */
+  width: 30px; /* Set a larger fixed width for the icons */
+  text-align: center; /* Center icon within its container */
+}
+
+.contact-section .contact-info-list .contact-info p {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.footer-section {
+  padding: 20px 0;
+  background: var(--secondary-color);
+  text-align: center; /* Center the content */
+}
+
+.section-content {
+  max-width: var(--site-max-width); /* Limit width for better centering */
+  margin: 0 auto;
+}
+
+.copyright-text {
+  color: var(--white-color);
+  transition: 0.2s ease;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  margin-top: 10px; /* Add spacing between text and icons */
+}
+
+.social-links li {
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+.social-link {
+  color: var(--white-color);
+  font-size: var(--font-size-l);
+  transition: 0.2s ease;
+}
+
+.social-link:hover {
+  color: #7C8363;
+}
+
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+
+
+    
+  }
+}

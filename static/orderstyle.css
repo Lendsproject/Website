@@ -1,0 +1,169 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --white-color: #fff;
+    --secondary-color: #31473A;
+    --font-size-l: 1.5rem;
+    --site-max-width: 1300px;
+}
+
+body {
+    background-color: #7C8363;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #31473A;
+}
+
+.navbar .logo {
+    color: #EDF4F2;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+    color: #FFF;
+}
+
+.navbar .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navbar a {
+    color: #EDF4F2;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    min-height: calc(100vh - 160px); /* Adjust height to account for header and footer */
+    padding: 20px;
+    margin-top: 80px; /* Add top margin to create space between header and form */
+}
+
+.order-form-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px; /* Increase max-width for larger form */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #31473A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #7C8363;
+}
+
+/* Footer section styling */
+.footer-section {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    text-align: center; /* Center the content */
+}
+
+.footer-section .section-content {
+    max-width: var(--site-max-width); /* Limit width for better centering */
+    margin: 0 auto;
+}
+
+.footer-section .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 10px; /* Add spacing between text and icons */
+}
+
+.footer-section .social-links li {
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+.footer-section .social-link {
+    color: var(--white-color);
+    font-size: var(--font-size-l);
+}
+
+.footer-section .copyright-text {
+    color: var(--white-color);
+    transition: 0.2s ease;
+}
