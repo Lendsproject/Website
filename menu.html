@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="{{ url_for('index') }}">☕ Andy Cafe<span>.</span></a>
+      <ul class="menu-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('menu') }}">Menu</a></li>
+        <li><a href="{{ url_for('order') }}">Order</a></li>
+        <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> 
+    <!-- Menu section -->
+    <section class="menu-section" id="menu">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="section-content">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/hotcoffee.png') }}" alt="Hot Coffee" class="menu-image" />
+            <div class="menu-details">
+              <h3 class="name">Hot Coffee</h3>
+              <div class="menu-item-price">
+                <span>Americano</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Freshly Brewed Coffee</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Flat White</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Cappuccino</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Cafe Mocha</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Cafe Latte</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Latte Macchiato</span>
+                <span>(M) - 100</span>
+                <span>(L) - 109</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/matchaaa.png') }}" alt="Iced Coffee" class="menu-image" />
+            <div class="menu-details">
+              <h3 class="name">Iced Coffee & Milk based</h3>
+              <div class="menu-item-price">
+                <span>Iced Americano</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Caramel Macchiato</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Spanish Latte</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Matcha Latte</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Strawberry Matcha</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Dirty Matcha</span>
+                <span>(M) - 140</span>
+                <span>(L) - 149</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/Sparkling.png') }}" alt="Fruit Tea" class="menu-image" />
+            <div class="menu-details">
+              <h3 class="name">Fruit Tea</h3>
+              <div class="menu-item-price">
+                <span>Passion Fruit Tea</span>
+                <span>(M) - 120</span>
+                <span>(L) - 130</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Peach Fruit Tea</span>
+                <span>(M) - 120</span>
+                <span>(L) - 130</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Lychee Fruit Tea</span>
+                <span>(M) - 120</span>
+                <span>(L) - 130</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Mango Fruit Tea</span>
+                <span>(M) - 120</span>
+                <span>(L) - 130</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/Tapsilog.png') }}" alt="Silog" class="menu-image" />
+            <div class="menu-details">
+            <h3 class="name">Silog Meals</h3>
+              <div class="menu-item-price">
+                <span>Tapsilog</span>
+                <span> - 150</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Tocilog</span>
+                <span> - 140</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Longsilog</span>
+                <span> - 130</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Bangsilog</span>
+                <span> - 160</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/Pasta1.png') }}" alt="Pasta" class="menu-image" />
+            <div class="menu-details">
+              <h3 class="name">Pasta</h3>
+              <div class="menu-item-price">
+                <span>Spaghetti</span>
+                <span> - 120</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Carbonara</span>
+                <span> - 130</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Pesto</span>
+                <span> - 140</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Lasagna</span>
+                <span> - 150</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="{{ url_for('static', filename='images/Burger.png') }}" alt="burger & French Fries" class="menu-image" />
+            <div class="menu-details">
+            <h3 class="name">Burger & Fries</h3>
+              <div class="menu-item-price">
+                <span>Cheeseburger</span>
+                <span> - 150</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Bacon Burger</span>
+                <span> - 160</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Chicken Burger</span>
+                <span> - 140</span>
+              </div>
+              <div class="menu-item-price">
+                <span>Fries</span>
+                <span> - 80</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-section">
+    <div class="section-content">
+        <p class="copyright-text">© 2025 Andy Cafe. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61570357920747&mibextid=ZbWKwL"" class="social-link"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/cafeandy1?igsh=MWw5bmVvM3U5Ymkx" class="social-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

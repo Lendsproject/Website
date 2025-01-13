@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Andy Cafe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="homepage">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="{{ url_for('home') }}">☕ Andy Cafe<span>.</span></a>
+            <ul class="menu-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                <li><a href="{{ url_for('order') }}">Order</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="content">
+                <h2>Start Your Day with Matcha, Baby!</h2>
+                <p style="text-align: justify;">
+                    Coffee is a popular and beloved beverage enjoyed by 
+                    people around the world. Awaken your senses with a steaming cup of liquid motivation.
+                    Coffee is more than just a beverage, it's a crucial part of many people's daily routines. For coffee lovers, few things beat that first sip of a freshly brewed cup. 
+                    And coffee is for more than just drinking.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">© 2025 Andy Cafe. All rights reserved.</p>
+            <ul class="social-links">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61570357920747&mibextid=ZbWKwL"" class="social-link"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/cafeandy1?igsh=MWw5bmVvM3U5Ymkx" class="social-link"><i class="fab fa-instagram"></i></a>
+            </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

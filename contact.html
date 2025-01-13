@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="{{ url_for('home') }}">☕ Andy Cafe<span>.</span></a>
+            <ul class="menu-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                <li><a href="{{ url_for('order') }}">Order</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- Contact section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>123 Alaminos, Cecila street</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-envelope"></i>
+              <p>andycafeee69@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>+639315032123</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Saturday: 9:00 AM - 12:00AM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+          </ul>
+        </div>
+    </section>
+    </main>
+    <footer class="footer-section">
+      <div class="section-content">
+          <p class="copyright-text">© 2025 Andy Cafe. All rights reserved.</p>
+          <ul class="social-links">
+              <li>
+                  <a href="https://www.facebook.com/profile.php?id=61570357920747&mibextid=ZbWKwL" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/cafeandy1?igsh=MWw5bmVvM3U5Ymkx" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+</body>
+</html>
