@@ -118,18 +118,22 @@ This endpoint creates a new customer order.
 
 `POST`
 
-Request Body (JSON):
-```json
+**Request Body (JSON Schema):**
 
+```json
 {
-  "Customer Name": "string",
-  "Contact Number": "string", 
-  "Hot Drinks": "string",
-  "Cold Beverages": "string",
-  "Ordered Meals": "string",
-  "Ordered Pasta": "string",
-  "Ordered Burger & Fries": "string"
-}     
+  "type": "object",
+  "properties": {
+    "Customer Name": { "type": "string", "description": "The name of the customer placing the order." },
+    "Contact Number": { "type": "string", "description": "The customer's contact number." },
+    "Hot Drinks": { "type": "string", "description": "Hot drinks ordered (e.g., \"Caramel Machiato\", \"Americano\")." },
+    "Cold Beverages": { "type": "string", "description": "Cold beverages ordered (e.g., \"Caramel Machiato\", \"Matcha Latte\")." },
+    "Ordered Meals": { "type": "string", "description": "Meals ordered (e.g., \"Tapsilog\", \"Bacsilog\")." },
+    "Ordered Pasta": { "type": "string", "description": "Pasta dishes ordered." },
+    "Ordered Burger & Fries": { "type": "string", "description": "Burger and fries ordered." }
+  },
+  "required": [ "Customer Name", "Contact Number" ]
+}
 
 Example Request:
 
@@ -145,9 +149,10 @@ JSON
   "Ordered Burger & Fries": "Beef Burger & Fries"
 }
 
+
+
 Example Response:
 
-JSON
 
 {
   "Order_id": 1,
