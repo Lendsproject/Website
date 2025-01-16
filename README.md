@@ -65,7 +65,7 @@ Routes in Flask are defined using the @app.route decorator. Each route correspon
 
 ![image](https://github.com/user-attachments/assets/94daae4c-6c13-45d8-b22f-7ac0966de544)
 
-These routes define endpoints for the home and about pages of your website. When a user navigates to these URLs, the corresponding functions are executed, and the appropriate HTML templates are rendered.
+- These routes define endpoints for the home and about pages of your website. When a user navigates to these URLs, the corresponding functions are executed, and the appropriate HTML templates are rendered.
 
 2. 
 
