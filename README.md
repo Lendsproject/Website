@@ -119,23 +119,34 @@ This endpoint creates a new customer order.
 `POST`
 
 **Request Body (JSON):**
-
-The request body must be a JSON object with the following fields:
-
-| Field Name           | Data Type | Description                                        | Required |
-|----------------------|-----------|----------------------------------------------------|----------|
-| Customer Name        | string    | The name of the customer placing the order.         | Yes      |
-| Contact Number       | string    | The customer's contact number.                     | Yes      |
-| Hot Drinks           | string    | The hot drink(s) ordered (e.g., "Coffee", "Tea").   | No       |
-| Cold Beverages       | string    | The cold beverage(s) ordered (e.g., "Juice", "Soda").| No       |
-| Ordered Meals        | string    | The meal(s) ordered (e.g., "Breakfast", "Lunch").  | No       |
-| Ordered Pasta        | string    | The pasta dish(es) ordered.                         | No       |
-| Ordered Burger & Fries| string    | The burger and fries ordered.                      | No       |
+```json
+{
+  "Customer Name": "string",
+  "Contact Number": "string", 
+  "Hot Drinks": "string",
+  "Cold Beverages": "string",
+  "Ordered Meals": "string",
+  "Ordered Pasta": "string",
+  "Ordered Burger & Fries": "string"
+}     
 
 **Sample Request:**
+{
+ “Customer Name”: “Andy”,
+ “Contact Number”: “09823547891”
+ “Hot Drinks”: “Americano”,
+ “Cold Beverages”: “Green Apple”,
+ “Ordered Meals”: “Tapsilog”,
+ “Ordered Pasta”: “Pesto Pasta”,
+ “Ordered Burger & Fries”: “Beef Burger & Fries”,
+ }
+
+
+**Sample Response:**
 
 ```json
 {
+  "Order_id": "1",
   "Customer Name": "Andy",
   "Contact Number": "09823547891",
   "Hot Drinks": "Americano",
