@@ -67,7 +67,14 @@ Routes in Flask are defined using the @app.route decorator. Each route correspon
 
 - These routes define endpoints for the home and about pages of your website. When a user navigates to these URLs, the corresponding functions are executed, and the appropriate HTML templates are rendered.
 
-2. 
+2. Handling Requests
+Flask can handle different types of HTTP requests, such as GET and POST. For example, the /order route can handle both GET and POST requests:
+
+![image](https://github.com/user-attachments/assets/97b91924-af05-434c-8690-69a99bb31dc7)
+
+- GET Request: When the user navigates to /order, the server responds with the order.html template.
+- POST Request: When the user submits the order form, the server processes the form data and redirects to the home page.
+
 
 
 
