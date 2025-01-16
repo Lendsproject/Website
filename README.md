@@ -120,7 +120,6 @@ This endpoint creates a new customer order.
 
 **Request Body (JSON):**
 
-```json
 {
   "Customer Name": "string",
   "Contact Number": "string", 
@@ -135,6 +134,7 @@ This endpoint creates a new customer order.
 **Sample Request:**
 
 {
+
  “Customer Name”: “Andy”,
  “Contact Number”: “09823547891”
  “Hot Drinks”: “Americano”,
