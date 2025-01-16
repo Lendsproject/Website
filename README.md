@@ -118,11 +118,9 @@ This endpoint creates a new customer order.
 
 `POST`
 
-```json
 
 **Request Body:**
-
-
+json ...
 {
   "type": "object",
   "properties": {
@@ -149,7 +147,6 @@ This endpoint creates a new customer order.
   "Ordered Pasta": "Pesto Pasta",
   "Ordered Burger & Fries": "Beef Burger & Fries"
 }
-
 
 
 **Sample Request:**
