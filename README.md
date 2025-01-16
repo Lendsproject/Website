@@ -137,7 +137,6 @@ This endpoint creates a new customer order.
 
 Example Request:
 
-JSON
 
 {
   "Customer Name": "Andy",
