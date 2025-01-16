@@ -126,7 +126,7 @@ This endpoint creates a new customer order.
 
 Request Body
 
-json
+'''json
 
 {
 
@@ -146,10 +146,9 @@ json
 
 Sample Request:
 
-json
+'''json
 
 
-   
    {
      "Customer Name": "Andy",
      "Contact Number": "09823547891",
@@ -162,7 +161,7 @@ json
 
 Sample Response:
 
-json
+'''json
 
 {
   "Order_id": 1,
