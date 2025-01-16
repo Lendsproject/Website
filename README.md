@@ -99,7 +99,7 @@ Flask can handle errors and provide appropriate responses:
 *  **JSON Responses:** Return data for API endpoints.
 *  **Error Handling:** Manage errors and provide user-friendly messages.
   
-By integrating these components, your Flask application can serve dynamic content, handle user input, interact with a database, and provide data through an API.
+By integrating these components, Flask application can serve dynamic content, handle user input, interact with a database, and provide data through an API.
 
 
 
