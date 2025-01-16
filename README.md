@@ -120,6 +120,7 @@ This endpoint creates a new customer order.
 
 **Request Body (JSON):**
 
+```json
 {
   "Customer Name": "string",
   "Contact Number": "string", 
