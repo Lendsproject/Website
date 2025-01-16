@@ -62,7 +62,10 @@ The API works alongside the website, not as a replacement. Here's how they work 
 
 1. Defining Routes
 Routes in Flask are defined using the @app.route decorator. Each route corresponds to a URL endpoint that the client can access.
+
 ![image](https://github.com/user-attachments/assets/94daae4c-6c13-45d8-b22f-7ac0966de544)
+
+
 
 
 
