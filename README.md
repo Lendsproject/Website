@@ -51,5 +51,27 @@ We have something to suit every taste, whether you want a smooth, mild brew or a
 2.  [Tan, Andy Jr A. BSIT](https://www.facebook.com/andyjr.tan.5?mibextid=ZbWKwL)
 
 
+## Flask Web Application with Integrated API
+This document explains how an API (Application Programming Interface) integrates with a Flask web application.
+
+What is an API?
+An API allows different software systems to communicate with each other. In a Flask application context, the API handles requests from the client (like a web browser) and responds with data or performs actions on the server.
+
+How the API Integrates
+The API works alongside the website, not as a replacement. Here's how they work together:
+
+1. Defining Routes
+Routes in Flask are defined using the @app.route decorator. Each route corresponds to a URL endpoint that the client can access.
+For example:
+@app.route('/')
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 
 
