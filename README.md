@@ -119,24 +119,47 @@ This endpoint creates a new customer order.
 `POST`
 
 
-**Request Body:**
+## Request Body
 
 ```json
+{
+  "type": "object",
+  "properties": {
+    "Customer Name": { "type": "string", "description": "The name of the customer placing the order." },
+    "Contact Number": { "type": "string", "description": "The customer's contact number." },
+    "Hot Drinks": { "type": "string", "description": "Hot drinks ordered (e.g., \"Caramel Machiato\", \"Americano\")." },
+    "Cold Beverages": { "type": "string", "description": "Cold beverages ordered (e.g., \"Caramel Machiato\", \"Matcha Latte\")." },
+    "Ordered Meals": { "type": "string", "description": "Meals ordered (e.g., \"Tapsilog\", \"Bacsilog\")." },
+    "Ordered Pasta": { "type": "string", "description": "Pasta dishes ordered." },
+    "Ordered Burger & Fries": { "type": "string", "description": "Burger and fries ordered." }
+  },
+  "required": [ "Customer Name", "Contact Number" ]
+}
+
+**Sample Request:**
+
+   
    {
-     "type": "object",
-     "properties": {
-       "Customer Name": { "type": "string", "description": "The name of the customer placing the order." },
-       "Contact Number": { "type": "string", "description": "The customer's contact number." },
-       "Hot Drinks": { "type": "string", "description": "Hot drinks ordered (e.g., \"Caramel Machiato\", \"Americano\")." },
-       "Cold Beverages": { "type": "string", "description": "Cold beverages ordered (e.g., \"Caramel Machiato\", \"Matcha Latte\")." },
-       "Ordered Meals": { "type": "string", "description": "Meals ordered (e.g., \"Tapsilog\", \"Bacsilog\")." },
-       "Ordered Pasta": { "type": "string", "description": "Pasta dishes ordered." },
-       "Ordered Burger & Fries": { "type": "string", "description": "Burger and fries ordered." }
-     },
-     "required": [ "Customer Name", "Contact Number" ]
+     "Customer Name": "Andy",
+     "Contact Number": "09823547891",
+     "Hot Drinks": "Americano",
+     "Cold Beverages": "Green Apple",
+     "Ordered Meals": "Tapsilog",
+     "Ordered Pasta": "Pesto Pasta",
+     "Ordered Burger & Fries": "Beef Burger & Fries"
    }
 
+**Sample Response:**
 
 
-
+{
+  "Order_id": 1,
+  "Customer Name": "Andy",
+  "Contact Number": "09823547891",
+  "Hot Drinks": "Americano",
+  "Cold Beverages": "Green Apple",
+  "Ordered Meals": "Tapsilog",
+  "Ordered Pasta": "Pesto Pasta",
+  "Ordered Burger & Fries": "Beef Burger & Fries"
+}
 
