@@ -118,9 +118,11 @@ This endpoint creates a new customer order.
 
 `POST`
 
-**Request Body (JSON Schema):**
-
 ```json
+
+**Request Body:**
+
+
 {
   "type": "object",
   "properties": {
@@ -135,7 +137,7 @@ This endpoint creates a new customer order.
   "required": [ "Customer Name", "Contact Number" ]
 }
 
-Example Request:
+**Sample Request:**
 
 
 {
@@ -150,7 +152,7 @@ Example Request:
 
 
 
-Example Response:
+**Sample Request:**
 
 
 {
