@@ -119,6 +119,7 @@ This endpoint creates a new customer order.
 `POST`
 
 **Request Body (JSON):**
+
 ```json
 {
   "Customer Name": "string",
@@ -130,7 +131,10 @@ This endpoint creates a new customer order.
   "Ordered Burger & Fries": "string"
 }     
 
+
 **Sample Request:**
+
+```json
 {
  “Customer Name”: “Andy”,
  “Contact Number”: “09823547891”
