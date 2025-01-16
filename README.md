@@ -121,7 +121,7 @@ This endpoint creates a new customer order.
 
 **Request Body:**
 
-```json
+(```json)
 {
   "type": "object",
   "properties": {
@@ -136,4 +136,19 @@ This endpoint creates a new customer order.
   "required": [ "Customer Name", "Contact Number" ]
 }
 
+
+
+**Sample Request:**
+
+(```json)
+
+{
+  "Customer Name": "Andy",
+  "Contact Number": "09823547891",
+  "Hot Drinks": "Americano",
+  "Cold Beverages": "Green Apple",
+  "Ordered Meals": "Tapsilog",
+  "Ordered Pasta": "Pesto Pasta",
+  "Ordered Burger & Fries": "Beef Burger & Fries"
+}
 
