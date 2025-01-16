@@ -124,9 +124,10 @@ This endpoint creates a new customer order.
 `POST`
 
 
-## Request Body
+Request Body
 
-```json
+json
+
 {
 
   "type": "object",
@@ -143,10 +144,11 @@ This endpoint creates a new customer order.
 
 }
 
+Sample Request:
 
-**Sample Request:**
+json
 
-```json
+
    
    {
      "Customer Name": "Andy",
@@ -158,10 +160,9 @@ This endpoint creates a new customer order.
      "Ordered Burger & Fries": "Beef Burger & Fries"
    }
 
-**Sample Response:**
+Sample Response:
 
-```json
-
+json
 
 {
   "Order_id": 1,
@@ -173,4 +174,3 @@ This endpoint creates a new customer order.
   "Ordered Pasta": "Pesto Pasta",
   "Ordered Burger & Fries": "Beef Burger & Fries"
 }
-
