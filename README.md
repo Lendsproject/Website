@@ -134,7 +134,6 @@ This endpoint creates a new customer order.
 
 **Sample Request:**
 
-```json
 {
  “Customer Name”: “Andy”,
  “Contact Number”: “09823547891”
@@ -148,7 +147,6 @@ This endpoint creates a new customer order.
 
 **Sample Response:**
 
-```json
 {
   "Order_id": "1",
   "Customer Name": "Andy",
