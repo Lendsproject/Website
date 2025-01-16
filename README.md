@@ -144,9 +144,8 @@ Request Body
 
 }
 
-Sample Request:
 
-```json
+Sample Request:
 
 
    {
@@ -159,9 +158,8 @@ Sample Request:
      "Ordered Burger & Fries": "Beef Burger & Fries"
    }
 
+
 Sample Response:
-
-
 
 {
   "Order_id": 1,
