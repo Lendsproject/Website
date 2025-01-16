@@ -57,7 +57,7 @@ This document explains how an API (Application Programming Interface) integrates
 What is an API?
 An API allows different software systems to communicate with each other. In a Flask application context, the API handles requests from the client (like a web browser) and responds with data or performs actions on the server.
 
-How the API Integrates
+## How the API Integrates
 The API works alongside the website, not as a replacement. Here's how they work together:
 
 1. Defining Routes
