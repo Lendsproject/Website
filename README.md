@@ -118,7 +118,7 @@ This endpoint creates a new customer order.
 
 `POST`
 
-**Request Body (JSON):**
+Request Body (JSON):
 
 {
   "Customer Name": "string",
@@ -130,25 +130,11 @@ This endpoint creates a new customer order.
   "Ordered Burger & Fries": "string"
 }     
 
+Example Request:
 
-**Sample Request:**
-
-{
-
- “Customer Name”: “Andy”,
- “Contact Number”: “09823547891”
- “Hot Drinks”: “Americano”,
- “Cold Beverages”: “Green Apple”,
- “Ordered Meals”: “Tapsilog”,
- “Ordered Pasta”: “Pesto Pasta”,
- “Ordered Burger & Fries”: “Beef Burger & Fries”,
- }
-
-
-**Sample Response:**
+JSON
 
 {
-  "Order_id": "1",
   "Customer Name": "Andy",
   "Contact Number": "09823547891",
   "Hot Drinks": "Americano",
@@ -157,8 +143,20 @@ This endpoint creates a new customer order.
   "Ordered Pasta": "Pesto Pasta",
   "Ordered Burger & Fries": "Beef Burger & Fries"
 }
+Example Response:
 
+JSON
 
+{
+  "Order_id": 1,
+  "Customer Name": "Andy",
+  "Contact Number": "09823547891",
+  "Hot Drinks": "Americano",
+  "Cold Beverages": "Green Apple",
+  "Ordered Meals": "Tapsilog",
+  "Ordered Pasta": "Pesto Pasta",
+  "Ordered Burger & Fries": "Beef Burger & Fries"
+}
 
 
 
